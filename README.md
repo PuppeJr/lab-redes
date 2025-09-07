@@ -1,38 +1,43 @@
-<<<<<<< HEAD
-﻿# Laboratório de Redes - VLANs e Sub-redes
-
-Documentação do laboratório: topologia, configurações e instruções para reproduzir o ambiente no GNS3 + VMware Workstation.
-=======
-Laboratório de Redes - VLANs e Sub-redes
-
-Este repositório contém a configuração e documentação de um laboratório de redes com VLANs, sub-redes e roteamento entre VLANs.
 # 🖧 Laboratório de Redes - VLANs e Sub-redes
 
-Este repositório contém a configuração e documentação de um laboratório de redes criado para estudo prático.  
-O objetivo é consolidar conhecimentos em VLANs, sub-redes e roteamento entre VLANs usando software gratuito.
+Este repositório contém a documentação, topologia e arquivos de configuração de um laboratório de redes criado para estudo prático com **GNS3 + VMware Workstation**.  
+O objetivo é consolidar conhecimentos técnicos em **VLANs, sub-redes e roteamento entre VLANs** em um ambiente realista, reproduzível e usando somente software gratuito.
 
-🔹 Objetivos
-- Criar um ambiente de laboratório de redes.
-- Configurar **VLANs** para diferentes departamentos.
-- Implementar **sub-redes** com endereçamento IP.
-- Testar comunicação entre hosts de diferentes VLANs.
+---
 
-🔹 Cenário Simulado
-- VLAN 10 → Departamento de Vendas (192.168.10.0/24)
-- VLAN 20 → Departamento de TI (192.168.20.0/24)
-- VLAN 30 → Administração (192.168.30.0/24)
+## 🔹 Objetivos do Projeto
+- Criar um ambiente de laboratório de redes virtualizado.
+- Configurar VLANs para diferentes departamentos de uma empresa fictícia.
+- Implementar sub-redes com endereçamento IP planejado.
+- Testar comunicação entre hosts em diferentes VLANs.
+- Documentar todo o processo para fins de portfólio técnico.
 
+---
 
-🛠️ Ferramentas Utilizadas
-- [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer)  
-- [VirtualBox](https://www.virtualbox.org/) (opcional para testes avançados)  
-- Sistemas Operacionais:  
-  - Windows 10 (host)  
-  - Linux Ubuntu/Debian (para servidores, quando aplicável)
+## 🛠️ Ferramentas Utilizadas
+- **GNS3** → simulação da topologia de rede.
+- **VMware Workstation Player** → máquinas virtuais Linux/Windows para simular hosts e servidores.
+- **VSCode** → edição de configs e documentação.
+- **Sistemas Operacionais**:
+  - Windows 10 (host principal)
+  - Linux Ubuntu/Debian (servidores DNS/DHCP opcionais)
+  - Router/Switch Cisco (imagens no GNS3)
 
-🏗️ Topologia da Rede
-Diagrama criado no [draw.io](https://app.diagrams.net/) ou no Packet Tracer:  
+---
 
-![Topologia da Rede](docs/topologia.png)
+## 🏗️ Topologia da Rede
 
->>>>>>> df88e1ec3b01c8af46c123eba08307e8675a78cb
+📌 Exemplo de cenário simulado (empresa fictícia):
+
+- **VLAN 10 → Vendas** → `192.168.10.0/24`
+- **VLAN 20 → TI** → `192.168.20.0/24`
+- **VLAN 30 → Administração** → `192.168.30.0/24`
+
+🔗 O diagrama será criado no **draw.io** ou exportado do **Packet Tracer/GNS3** e ficará disponível em:  
+`/docs/topologia.png`
+
+```mermaid
+graph TD
+    R[Router On a Stick] ---|Trunk| S[Switch Layer 2]
+    S --- PC1[VLAN 10 - Vendas]
+    S --- PC2[VLAN 20]()
