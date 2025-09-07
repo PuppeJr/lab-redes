@@ -12,6 +12,10 @@ O objetivo é consolidar conhecimentos em VLANs, sub-redes e roteamento entre VL
 - Implementar **sub-redes** com endereçamento IP.
 - Testar comunicação entre hosts de diferentes VLANs.
 
+🔹 Cenário Simulado
+- VLAN 10 → Departamento de Vendas (192.168.10.0/24)
+- VLAN 20 → Departamento de TI (192.168.20.0/24)
+- VLAN 30 → Administração (192.168.30.0/24)
 
 
 🛠️ Ferramentas Utilizadas
