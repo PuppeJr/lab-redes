@@ -24,3 +24,5 @@ O objetivo é consolidar conhecimentos em VLANs, sub-redes e roteamento entre VL
 🏗️ Topologia da Rede
 Diagrama criado no [draw.io](https://app.diagrams.net/) ou no Packet Tracer:  
 
+![Topologia da Rede](docs/topologia.png)
+
