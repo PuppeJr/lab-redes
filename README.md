@@ -91,16 +91,6 @@ Este projeto é de caráter **acadêmico**, desenvolvido para fins de estudo e c
 Sinta-se à vontade para utilizar, modificar e distribuir este material, desde que para fins **não comerciais** e com a devida atribuição.
 
 
----
-
-👉 Esse arquivo já está pronto pra você salvar como README.md no VSCode e depois subir no GitHub com:
-
-git add README.md
-git commit -m "Adicionando documentação inicial do laboratório"
-git push
 
 
----
-
-Quer que eu te mostre agora como organizar a pasta do projeto (configs, docs, scripts, screenshots) antes de subir no GitHub?
 
